@@ -7,7 +7,7 @@ const discoverData = [
     image: require("../images/kayak.png"),
     imageBig: require("../images/kayak-big.png"),
     description:
-      "An ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.",
+      "An ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.n ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.n ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.",
     liked: true,
     price: 50,
     rating: 5,
@@ -25,6 +25,32 @@ const discoverData = [
     price: 350,
     rating: 4.5,
     duration: 3,
+  },
+  {
+    id: "discover-1",
+    title: "Kayaking in the Tofino Sea",
+    location: "Canada",
+    image: require("../images/kayak.png"),
+    imageBig: require("../images/kayak-big.png"),
+    description:
+      "An ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.",
+    liked: true,
+    price: 50,
+    rating: 5,
+    duration: 2,
+  },
+  {
+    id: "discover-1",
+    title: "Kayaking in the Tofino Sea",
+    location: "Canada",
+    image: require("../images/kayak.png"),
+    imageBig: require("../images/kayak-big.png"),
+    description:
+      "An ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.",
+    liked: true,
+    price: 50,
+    rating: 5,
+    duration: 2,
   },
 ];
 
