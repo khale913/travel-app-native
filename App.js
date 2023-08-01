@@ -13,6 +13,7 @@ import {
   createBottomTabNavigator,
   BottomTabBar,
 } from "@react-navigation/bottom-tabs";
+import { useFonts } from "expo-font";
 
 Entypo.loadFont();
 MaterialCommunityIcons.loadFont();
@@ -63,6 +64,24 @@ const TabNavigator = () => {
 };
 
 const App = () => {
+  const [fontsLoaded] = useFonts({
+    "Lato-Bold": require("./assets/fonts/Lato-Bold.ttf"),
+    "Lato-Regular": require("./assets/fonts/Lato-Regular.ttf"),
+    "Lato-Black": require("./assets/fonts/Lato-Black.ttf"),
+    "Lato-Black-Italic": require("./assets/fonts/Lato-BlackItalic.ttf"),
+    "Lato-Bold-Italic": require("./assets/fonts/Lato-BoldItalic.ttf"),
+    "Lato-Italic": require("./assets/fonts/Lato-Italic.ttf"),
+    "Lato-Light": require("./assets/fonts/Lato-Light.ttf"),
+    "Lato-Light-Italic": require("./assets/fonts/Lato-LightItalic.ttf"),
+    "Lato-Regular": require("./assets/fonts/Lato-Regular.ttf"),
+    "Lato-Thin": require("./assets/fonts/Lato-Thin.ttf"),
+    "Lato-Thin-Italic": require("./assets/fonts/Lato-ThinItalic.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer>
       <Stack.Navigator
