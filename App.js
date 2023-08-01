@@ -65,8 +65,18 @@ const TabNavigator = () => {
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="TabNavigator" component={TabNavigator} />
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen
+          name="TabNavigator"
+          component={TabNavigator}
+          screenOptions={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
